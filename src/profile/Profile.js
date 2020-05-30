@@ -1,5 +1,6 @@
 import React from 'react' ;
 import PropTypes from 'prop-types';
+import Affichage from './Affichage';
 
 
 const Profile = (props) => {
@@ -12,8 +13,8 @@ const Profile = (props) => {
         <div >
 
             <p>{props.children}</p>
-            <a href="/" onClick={handleName}> Click me</a>
             
+            <Affichage aff={handleName}></Affichage>
         </div>
     )
 }
